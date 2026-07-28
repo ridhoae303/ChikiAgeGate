@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./banner/chiki-agegate-banner.jpg" alt="Chiki AgeGate banner" width="100%">
+  <img src="./banner/chiki-agegate-banner.png" alt="Chiki AgeGate banner" width="100%">
 </p>
 
 <h1 align="center">Chiki AgeGate</h1>
@@ -115,7 +115,7 @@ app/
 The banner used by this README belongs here:
 
 ```text
-banner/chiki-agegate-banner.jpg
+banner/chiki-agegate-banner.png
 ```
 
 ## Requirements
