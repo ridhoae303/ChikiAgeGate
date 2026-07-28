@@ -1,0 +1,122 @@
+Chiki AgeGate License
+
+Copyright (c) 2026 ridhoae303
+
+Permission is granted, free of charge, to any person obtaining a copy of
+Chiki AgeGate and its accompanying source code, native code, assets, and
+documentation (the "Software"), to view, use, and modify the Software for
+personal projects, research, education, and legitimate application or mod
+development, subject to every term below.
+
+1. ATTRIBUTION
+
+   The copyright notice, the name "ridhoae303", and a clear reference to the
+   original Chiki AgeGate project must remain visible in source copies,
+   modified copies, public documentation, and distributed builds that contain
+   or are substantially based on the Software.
+
+2. NO FALSE AUTHORSHIP
+
+   You may not claim that you created the original Software. You may describe
+   and credit your own changes, but those changes must be clearly separated
+   from the work originally created by ridhoae303.
+
+3. MODIFICATION
+
+   You may modify the user interface, age rules, native checks, package names,
+   assets, text, integration code, and other parts of the Software. Publicly
+   distributed modified versions must be clearly marked as modified and must
+   not misrepresent themselves as an unmodified official release.
+
+4. REDISTRIBUTION
+
+   Redistribution of source or binary copies is allowed only when:
+
+   a. this license is included in full;
+   b. the required attribution is preserved;
+   c. modified versions are clearly identified as modified;
+   d. the original creator is not presented as responsible for third-party
+      changes, support, security, or compliance claims; and
+   e. the distribution does not violate any other term of this license.
+
+5. NO CREDIT REMOVAL OR REBRANDING AS ORIGINAL WORK
+
+   You may not remove, hide, replace, forge, or deliberately obscure the
+   original authorship information for the purpose of presenting the Software
+   as your own original creation. You may use your own branding for a modified
+   application, but the underlying Chiki AgeGate credit and license must still
+   be provided in a reasonable and accessible place.
+
+6. COMMERCIAL USE
+
+   You may integrate the Software into your own legitimate commercial
+   application or service. You may not sell, sublicense, or repackage the
+   Software by itself as a standalone paid library, template, verification
+   product, or download without prior written permission from ridhoae303.
+
+7. RESPONSIBLE USE
+
+   You may not use the Software to deceive users about what information is
+   collected, to falsely claim identity verification, to impersonate another
+   creator, to distribute malware, or to intentionally damage devices, data,
+   or accounts.
+
+8. AGE-VERIFICATION AND LEGAL DISCLAIMER
+
+   The Software is a client-side age gate. It does not verify identity,
+   government records, parental consent, or the truth of a birth date entered
+   by a user. The Software does not guarantee compliance with any law,
+   regulation, platform policy, store rule, or industry standard.
+
+   You are solely responsible for deciding whether the Software is suitable
+   for your project and for obtaining any legal or compliance advice required
+   in the countries and platforms where your project is distributed.
+
+9. PRIVACY RESPONSIBILITY
+
+   If you modify the Software to collect, transmit, log, or store personal
+   information, you are solely responsible for providing appropriate notice,
+   consent, security, retention rules, and legal compliance. The original
+   creator is not responsible for privacy practices introduced by a modified
+   version.
+
+10. SAME TERMS FOR PUBLIC DERIVATIVES
+
+   Any modified or derivative version that is publicly distributed must remain
+   under this license unless ridhoae303 grants prior written permission for a
+   different license.
+
+11. NO TRADEMARK OR ENDORSEMENT LICENSE
+
+   This license does not grant permission to use the names, logos, branding,
+   or visual identity of ridhoae303 or Chiki AgeGate in a way that suggests an
+   official partnership, endorsement, certification, or original authorship.
+
+12. TERMINATION
+
+   Your rights under this license end automatically if you violate any term.
+   After termination, you must stop distributing the Software and remove any
+   infringing public copies under your control. Rights may be restored only by
+   written permission from ridhoae303.
+
+13. DISCLAIMER OF WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, COMPATIBILITY,
+   SECURITY, ACCURACY, OR LEGAL COMPLIANCE. YOU USE THE SOFTWARE AT YOUR OWN
+   RISK.
+
+14. LIMITATION OF LIABILITY
+
+   TO THE MAXIMUM EXTENT PERMITTED BY LAW, RIDHOAE303 SHALL NOT BE LIABLE FOR
+   ANY CLAIM, DAMAGE, DATA LOSS, DEVICE FAILURE, ACCOUNT ACTION, BUSINESS LOSS,
+   REGULATORY ISSUE, OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE,
+   MODIFICATION, INTEGRATION, OR DISTRIBUTION.
+
+15. ADDITIONAL PERMISSION
+
+   Exceptions or additional permissions may be granted only in writing by
+   ridhoae303.
+
+By using, modifying, or distributing the Software, you agree to these terms.
