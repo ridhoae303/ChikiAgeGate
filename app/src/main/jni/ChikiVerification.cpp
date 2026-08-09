@@ -220,9 +220,38 @@ extern "C" JNIEXPORT jboolean JNICALL
 Java_com_chiki_makigate_ChikiVerification_qTrLxVmNp(
         JNIEnv*,
         jclass,
-        jint
+        jint year
 ) {
-    return JNI_FALSE;
+    time_t now = time(nullptr);
+    tm* currentTime = localtime(&now);
+
+    if (currentTime == nullptr) {
+        return JNI_FALSE;
+    }
+
+    int currentYear = currentTime->tm_year + 1900;
+    int birthYear = (int) year;
+
+    if (birthYear < kMinimumBirthYear) {
+        return JNI_FALSE;
+    }
+
+    int minimumAllowedBirthYear = currentYear - kMinimumAge;
+
+    if (birthYear > minimumAllowedBirthYear) {
+        return JNI_FALSE;
+    }
+
+    /*
+     * Return true only when the selected birth year is close to the minimum age
+     * boundary. This keeps the second confirmation step meaningful without
+     * forcing it for every valid user.
+     */
+    int boundaryWindow = 3;
+
+    return (minimumAllowedBirthYear - birthYear) <= boundaryWindow
+            ? JNI_TRUE
+            : JNI_FALSE;
 }
 
 static std::string kZxQpLmRv(const std::string& data) {
