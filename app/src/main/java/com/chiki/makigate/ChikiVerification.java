@@ -893,6 +893,36 @@ public class ChikiVerification {
         final DisplayMetrics dm =
                 activity.getResources().getDisplayMetrics();
 
+        final int shortestDp =
+                Math.round(
+                        Math.min(dm.widthPixels, dm.heightPixels)
+                                / dm.density
+                );
+        final int overlayPaddingDp =
+                Math.max(
+                        12,
+                        Math.min(
+                                22,
+                                Math.round(shortestDp / 24.0f)
+                        )
+                );
+        final int panelPaddingTopDp =
+                Math.max(
+                        18,
+                        Math.min(
+                                24,
+                                Math.round(shortestDp / 28.0f)
+                        )
+                );
+        final int panelPaddingBottomDp =
+                Math.max(
+                        16,
+                        Math.min(
+                                22,
+                                Math.round(shortestDp / 32.0f)
+                        )
+                );
+
         final Dialog pickerDialog =
                 new Dialog(
                         activity,
@@ -932,10 +962,44 @@ public class ChikiVerification {
         overlay.setClipChildren(false);
         overlay.setClipToPadding(false);
         overlay.setPadding(
-                dp(dm, 22),
-                dp(dm, 22),
-                dp(dm, 22),
-                dp(dm, 22)
+                dp(dm, overlayPaddingDp),
+                dp(dm, overlayPaddingDp),
+                dp(dm, overlayPaddingDp),
+                dp(dm, overlayPaddingDp)
+        );
+
+        ScrollView scrollView = new ScrollView(activity);
+        scrollView.setFillViewport(true);
+        scrollView.setVerticalScrollBarEnabled(false);
+        scrollView.setOverScrollMode(View.OVER_SCROLL_NEVER);
+        scrollView.setClipChildren(false);
+        scrollView.setClipToPadding(false);
+
+        FrameLayout.LayoutParams scrollParams =
+                new FrameLayout.LayoutParams(
+                        ViewGroup.LayoutParams.MATCH_PARENT,
+                        ViewGroup.LayoutParams.MATCH_PARENT
+                );
+        scrollParams.gravity = Gravity.CENTER;
+
+        overlay.addView(
+                scrollView,
+                scrollParams
+        );
+
+        final FrameLayout contentHost = new FrameLayout(activity);
+        contentHost.setClipChildren(false);
+        contentHost.setClipToPadding(false);
+
+        ScrollView.LayoutParams contentHostParams =
+                new ScrollView.LayoutParams(
+                        ViewGroup.LayoutParams.MATCH_PARENT,
+                        ViewGroup.LayoutParams.WRAP_CONTENT
+                );
+
+        scrollView.addView(
+                contentHost,
+                contentHostParams
         );
 
         final LinearLayout panel = new LinearLayout(activity);
@@ -948,9 +1012,9 @@ public class ChikiVerification {
         panel.setClipToPadding(false);
         panel.setPadding(
                 dp(dm, 20),
-                dp(dm, 22),
+                dp(dm, panelPaddingTopDp),
                 dp(dm, 20),
-                dp(dm, 18)
+                dp(dm, panelPaddingBottomDp)
         );
 
         GradientDrawable panelBg =
@@ -979,7 +1043,7 @@ public class ChikiVerification {
 
         panelParams.gravity = Gravity.CENTER;
 
-        overlay.addView(
+        contentHost.addView(
                 panel,
                 panelParams
         );
