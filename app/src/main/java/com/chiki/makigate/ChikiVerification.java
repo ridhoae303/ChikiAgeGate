@@ -70,14 +70,25 @@ public class ChikiVerification {
 
     private static long lastBackPressedAt = 0L;
 
+    // Prevent the verification dialog from being recreated when the caller
+    // re-enters/resumes an Activity during the same app process. This is
+    // intentionally separate from the persisted "already verified" state.
+    private static boolean verificationShownThisProcess = false;
+
     public static void verify(final Activity activity) {
         if (activity == null || activity.isFinishing()) {
+            return;
+        }
+
+        if (verificationShownThisProcess) {
             return;
         }
 
         if (isAlreadyVerified(activity)) {
             return;
         }
+
+        verificationShownThisProcess = true;
 
         clearVerification(activity);
 
